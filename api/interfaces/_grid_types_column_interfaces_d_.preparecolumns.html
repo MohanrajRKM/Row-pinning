@@ -2403,6 +2403,9 @@ img {
 					<a href="_grid_types_column_interfaces_d_.preparecolumns.html#colgroup" class="tsd-kind-icon">col<wbr>Group</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="_grid_types_column_interfaces_d_.preparecolumns.html#columnmap" class="tsd-kind-icon">column<wbr>Map</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
 					<a href="_grid_types_column_interfaces_d_.preparecolumns.html#columnoffsets" class="tsd-kind-icon">column<wbr>Offsets</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
@@ -2410,6 +2413,9 @@ img {
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
 					<a href="_grid_types_column_interfaces_d_.preparecolumns.html#depth" class="tsd-kind-icon">depth</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="_grid_types_column_interfaces_d_.preparecolumns.html#fieldordermap" class="tsd-kind-icon">field<wbr>Order<wbr>Map</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
 					<a href="_grid_types_column_interfaces_d_.preparecolumns.html#groupcaptionaggregatetype" class="tsd-kind-icon">group<wbr>Caption<wbr>Aggregate<wbr>Type</a>
@@ -2491,9 +2497,11 @@ img {
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_column_interfaces_d_.preparecolumns.html#children" class="tsd-kind-icon">children</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_column_interfaces_d_.preparecolumns.html#colgroup" class="tsd-kind-icon">col<wbr>Group</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_column_interfaces_d_.preparecolumns.html#columnmap" class="tsd-kind-icon">column<wbr>Map</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_column_interfaces_d_.preparecolumns.html#columnoffsets" class="tsd-kind-icon">column<wbr>Offsets</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_column_interfaces_d_.preparecolumns.html#columns" class="tsd-kind-icon">columns</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_column_interfaces_d_.preparecolumns.html#depth" class="tsd-kind-icon">depth</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_column_interfaces_d_.preparecolumns.html#fieldordermap" class="tsd-kind-icon">field<wbr>Order<wbr>Map</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_column_interfaces_d_.preparecolumns.html#groupcaptionaggregatetype" class="tsd-kind-icon">group<wbr>Caption<wbr>Aggregate<wbr>Type</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_column_interfaces_d_.preparecolumns.html#isautoheightenabled" class="tsd-kind-icon">is<wbr>Auto<wbr>Height<wbr>Enabled</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_column_interfaces_d_.preparecolumns.html#ischeckboxcolumn" class="tsd-kind-icon">is<wbr>Check<wbr>Box<wbr>Column</a></li>
@@ -2553,6 +2561,26 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="columnmap" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> column<wbr>Map</h3>
+				<div class="tsd-signature tsd-kind-icon">column<wbr>Map<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="_grid_types_column_interfaces_d_.columnprops.html" class="tsd-signature-type">ColumnProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in src/grid/types/column.interfaces.d.ts:1017</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Map of field names to their corresponding column properties.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>default</dt>
+						<dd><p>new Map()</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 				<a name="columnoffsets" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagOptional">Optional</span> column<wbr>Offsets</h3>
 				<div class="tsd-signature tsd-kind-icon">column<wbr>Offsets<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{}</span></div>
@@ -2606,6 +2634,26 @@ img {
 					<dl class="tsd-comment-tags">
 						<dt>default</dt>
 						<dd><p>1</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="fieldordermap" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> field<wbr>Order<wbr>Map</h3>
+				<div class="tsd-signature tsd-kind-icon">field<wbr>Order<wbr>Map<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in src/grid/types/column.interfaces.d.ts:1011</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Map of field names to their index positions in visible columns.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>default</dt>
+						<dd><p>new Map()</p>
 						</dd>
 					</dl>
 				</div>

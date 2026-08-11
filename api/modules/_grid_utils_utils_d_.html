@@ -2406,6 +2406,9 @@ img {
 			<a href="_grid_utils_utils_d_.html#getactualpropfromcoll" class="tsd-kind-icon">get<wbr>Actual<wbr>Prop<wbr>From<wbr>Coll</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-private">
+			<a href="_grid_utils_utils_d_.html#getallcontentrows" class="tsd-kind-icon">get<wbr>All<wbr>Content<wbr>Rows</a>
+		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-private">
 			<a href="_grid_utils_utils_d_.html#getcasevalue" class="tsd-kind-icon">get<wbr>Case<wbr>Value</a>
 		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-private">
@@ -2489,6 +2492,7 @@ img {
 							<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-private"><a href="_grid_utils_utils_d_.html#comparevalues" class="tsd-kind-icon">compare<wbr>Values</a></li>
 							<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-private"><a href="_grid_utils_utils_d_.html#generatepredicate" class="tsd-kind-icon">generate<wbr>Predicate</a></li>
 							<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-private"><a href="_grid_utils_utils_d_.html#getactualpropfromcoll" class="tsd-kind-icon">get<wbr>Actual<wbr>Prop<wbr>From<wbr>Coll</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-private"><a href="_grid_utils_utils_d_.html#getallcontentrows" class="tsd-kind-icon">get<wbr>All<wbr>Content<wbr>Rows</a></li>
 							<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-private"><a href="_grid_utils_utils_d_.html#getcasevalue" class="tsd-kind-icon">get<wbr>Case<wbr>Value</a></li>
 							<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-private"><a href="_grid_utils_utils_d_.html#getcellselectionborderclasses" class="tsd-kind-icon">get<wbr>Cell<wbr>Selection<wbr>Border<wbr>Classes</a></li>
 							<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-private"><a href="_grid_utils_utils_d_.html#getcurrentpageselecteditems" class="tsd-kind-icon">get<wbr>Current<wbr>Page<wbr>Selected<wbr>Items</a></li>
@@ -2520,7 +2524,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">get<wbr>Expanded<wbr>Count<wbr>Before<wbr>Page<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>page<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, groupSettings<span class="tsd-signature-symbol">: </span><a href="../interfaces/_grid_types_grouping_interfaces_d_.groupsettings.html" class="tsd-signature-type">GroupSettings</a>, pageWiseExpandedRef<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RefObject</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">number</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/utils/utils.d.ts:228</li>
+						<li>Defined in src/grid/utils/utils.d.ts:237</li>
 					</ul>
 				</aside>
 				<div class="tsd-type-declaration">
@@ -2604,7 +2608,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">get<wbr>Page<wbr>From<wbr>Row<wbr>Index<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>startRowIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, endRowIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pageWiseStartEndIndexes<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">{ </span>endIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>startIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-symbol">{ </span>endPage<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>startPage<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/utils/utils.d.ts:233</li>
+						<li>Defined in src/grid/utils/utils.d.ts:242</li>
 					</ul>
 				</aside>
 				<div class="tsd-type-declaration">
@@ -2692,7 +2696,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">set<wbr>Grid<wbr>Telemetry<wbr>Feature<wbr>List<span class="tsd-signature-symbol">:</span> &lt;T&gt;<span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="_grid_types_grid_interfaces_d_.html#igridbase" class="tsd-signature-type">IGridBase</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, reactChildNodeBasedProps<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>aggregates<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">AggregateRowProps</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/utils/utils.d.ts:253</li>
+						<li>Defined in src/grid/utils/utils.d.ts:262</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2786,7 +2790,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">update<wbr>Page<wbr>Wise<wbr>Start<wbr>End<wbr>Indexes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>totalCount<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, pageSize<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, groupSettings<span class="tsd-signature-symbol">: </span><a href="../interfaces/_grid_types_grouping_interfaces_d_.groupsettings.html" class="tsd-signature-type">GroupSettings</a>, loadedPageWiseGroupExpandedCountRef<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RefObject</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-symbol">{ </span>endIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>startIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol">&gt;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/utils/utils.d.ts:229</li>
+						<li>Defined in src/grid/utils/utils.d.ts:238</li>
 					</ul>
 				</aside>
 				<div class="tsd-type-declaration">
@@ -2826,7 +2830,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">updateUIColumn<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Object</span>, newColumn<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_grid_types_column_interfaces_d_.icolumnbase.html" class="tsd-signature-type">IColumnBase</a><span class="tsd-signature-symbol">&gt;</span>, serviceLocator<span class="tsd-signature-symbol">: </span><a href="../interfaces/_grid_types_interfaces_d_.servicelocator.html" class="tsd-signature-type">ServiceLocator</a>, isColTypeDef<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">RefObject</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../interfaces/_grid_types_column_interfaces_d_.columnprops.html" class="tsd-signature-type">ColumnProps</a></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/utils/utils.d.ts:187</li>
+						<li>Defined in src/grid/utils/utils.d.ts:196</li>
 					</ul>
 				</aside>
 				<div class="tsd-type-declaration">
@@ -2873,7 +2877,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/grid/utils/utils.d.ts:154</li>
+								<li>Defined in src/grid/utils/utils.d.ts:163</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2907,7 +2911,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/grid/utils/utils.d.ts:186</li>
+								<li>Defined in src/grid/utils/utils.d.ts:195</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2958,7 +2962,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/grid/utils/utils.d.ts:101</li>
+								<li>Defined in src/grid/utils/utils.d.ts:110</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3011,7 +3015,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/grid/utils/utils.d.ts:111</li>
+								<li>Defined in src/grid/utils/utils.d.ts:120</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3052,7 +3056,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/grid/utils/utils.d.ts:205</li>
+								<li>Defined in src/grid/utils/utils.d.ts:214</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3115,6 +3119,41 @@ img {
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-private">
+				<a name="getallcontentrows" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>All<wbr>Content<wbr>Rows</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-private">
+					<li class="tsd-signature tsd-kind-icon">get<wbr>All<wbr>Content<wbr>Rows<span class="tsd-signature-symbol">(</span>gridRef<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">RefObject</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_grid_types_grid_interfaces_d_.gridref.html" class="tsd-signature-type">GridRef</a><span class="tsd-signature-symbol">&gt;</span>, selector<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">HTMLTableRowElement</span><span class="tsd-signature-symbol">[]</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in src/grid/utils/utils.d.ts:80</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Collects rows from pinned-top, content and pinned-bottom tables into a single array.</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>gridRef: <span class="tsd-signature-type">RefObject</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_grid_types_grid_interfaces_d_.gridref.html" class="tsd-signature-type">GridRef</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>Grid ref containing table accessors</p>
+								</div>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> selector: <span class="tsd-signature-type">string</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">HTMLTableRowElement</span><span class="tsd-signature-symbol">[]</span></h4>
+						<p>Combined array of content row elements</p>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-private">
 				<a name="getcasevalue" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Case<wbr>Value</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-private">
@@ -3124,7 +3163,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/grid/utils/utils.d.ts:84</li>
+								<li>Defined in src/grid/utils/utils.d.ts:93</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3153,7 +3192,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/grid/utils/utils.d.ts:147</li>
+								<li>Defined in src/grid/utils/utils.d.ts:156</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3201,7 +3240,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/grid/utils/utils.d.ts:169</li>
+								<li>Defined in src/grid/utils/utils.d.ts:178</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3275,7 +3314,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/grid/utils/utils.d.ts:91</li>
+								<li>Defined in src/grid/utils/utils.d.ts:100</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3351,7 +3390,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/grid/utils/utils.d.ts:227</li>
+								<li>Defined in src/grid/utils/utils.d.ts:236</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3413,7 +3452,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/grid/utils/utils.d.ts:196</li>
+								<li>Defined in src/grid/utils/utils.d.ts:205</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3456,7 +3495,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/grid/utils/utils.d.ts:133</li>
+								<li>Defined in src/grid/utils/utils.d.ts:142</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3538,7 +3577,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/grid/utils/utils.d.ts:245</li>
+								<li>Defined in src/grid/utils/utils.d.ts:254</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3605,7 +3644,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/grid/utils/utils.d.ts:246</li>
+								<li>Defined in src/grid/utils/utils.d.ts:255</li>
 							</ul>
 						</aside>
 						<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -3634,7 +3673,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/grid/utils/utils.d.ts:78</li>
+								<li>Defined in src/grid/utils/utils.d.ts:87</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3728,7 +3767,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/grid/utils/utils.d.ts:121</li>
+								<li>Defined in src/grid/utils/utils.d.ts:130</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3764,7 +3803,7 @@ img {
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/grid/utils/utils.d.ts:215</li>
+								<li>Defined in src/grid/utils/utils.d.ts:224</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
