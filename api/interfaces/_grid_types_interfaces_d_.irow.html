@@ -2421,6 +2421,9 @@ img {
 					<a href="_grid_types_interfaces_d_.irow.html#isintermediatestate" class="tsd-kind-icon">is<wbr>Intermediate<wbr>State</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="_grid_types_interfaces_d_.irow.html#ispinned" class="tsd-kind-icon">is<wbr>Pinned</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
 					<a href="_grid_types_interfaces_d_.irow.html#isselected" class="tsd-kind-icon">is<wbr>Selected</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
@@ -2428,6 +2431,9 @@ img {
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
 					<a href="_grid_types_interfaces_d_.irow.html#parentuid" class="tsd-kind-icon">parent<wbr>Uid</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="_grid_types_interfaces_d_.irow.html#pinbucket" class="tsd-kind-icon">pin<wbr>Bucket</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
 					<a href="_grid_types_interfaces_d_.irow.html#rowindex" class="tsd-kind-icon">row<wbr>Index</a>
@@ -2507,9 +2513,11 @@ img {
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_interfaces_d_.irow.html#isdisabled" class="tsd-kind-icon">is<wbr>Disabled</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_interfaces_d_.irow.html#isexpand" class="tsd-kind-icon">is<wbr>Expand</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_interfaces_d_.irow.html#isintermediatestate" class="tsd-kind-icon">is<wbr>Intermediate<wbr>State</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_interfaces_d_.irow.html#ispinned" class="tsd-kind-icon">is<wbr>Pinned</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_interfaces_d_.irow.html#isselected" class="tsd-kind-icon">is<wbr>Selected</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_interfaces_d_.irow.html#key" class="tsd-kind-icon">key</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_interfaces_d_.irow.html#parentuid" class="tsd-kind-icon">parent<wbr>Uid</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_interfaces_d_.irow.html#pinbucket" class="tsd-kind-icon">pin<wbr>Bucket</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_interfaces_d_.irow.html#rowindex" class="tsd-kind-icon">row<wbr>Index</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_interfaces_d_.irow.html#rowspan" class="tsd-kind-icon">row<wbr>Span</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_interfaces_d_.irow.html#setrowobject" class="tsd-kind-icon">set<wbr>Row<wbr>Object</a></li>
@@ -2531,7 +2539,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">cells<span class="tsd-signature-symbol">:</span> <a href="_grid_types_interfaces_d_.icell.html" class="tsd-signature-type">ICell</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/types/interfaces.d.ts:286</li>
+						<li>Defined in src/grid/types/interfaces.d.ts:298</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2581,7 +2589,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">edit<wbr>Inline<wbr>Row<wbr>Form<wbr>Ref<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RefObject</span><span class="tsd-signature-symbol">&lt;</span><a href="_grid_types_edit_interfaces_d_.inlineeditformref.html" class="tsd-signature-type">InlineEditFormRef</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> extends </span><span class="tsd-signature-type">IColumnBase</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">infer </span> C<span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> ? </span><span class="tsd-signature-type">C</span><span class="tsd-signature-symbol"> : </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/types/interfaces.d.ts:322</li>
+						<li>Defined in src/grid/types/interfaces.d.ts:334</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2601,7 +2609,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">element<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLTableRowElement</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/types/interfaces.d.ts:316</li>
+						<li>Defined in src/grid/types/interfaces.d.ts:328</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2661,7 +2669,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">height<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/types/interfaces.d.ts:304</li>
+						<li>Defined in src/grid/types/interfaces.d.ts:316</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2681,7 +2689,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">indent<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/types/interfaces.d.ts:298</li>
+						<li>Defined in src/grid/types/interfaces.d.ts:310</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2801,7 +2809,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">is<wbr>Disabled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/types/interfaces.d.ts:262</li>
+						<li>Defined in src/grid/types/interfaces.d.ts:274</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2821,7 +2829,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">is<wbr>Expand<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/types/interfaces.d.ts:268</li>
+						<li>Defined in src/grid/types/interfaces.d.ts:280</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2841,12 +2849,32 @@ img {
 				<div class="tsd-signature tsd-kind-icon">is<wbr>Intermediate<wbr>State<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/types/interfaces.d.ts:256</li>
+						<li>Defined in src/grid/types/interfaces.d.ts:268</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
 						<p>Indicates whether the selection is in an intermediate state.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>default</dt>
+						<dd><p>false</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="ispinned" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> is<wbr>Pinned</h3>
+				<div class="tsd-signature tsd-kind-icon">is<wbr>Pinned<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in src/grid/types/interfaces.d.ts:256</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Indicates whether the row is pinned to the top or bottom section.</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>default</dt>
@@ -2881,7 +2909,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/types/interfaces.d.ts:328</li>
+						<li>Defined in src/grid/types/interfaces.d.ts:340</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2901,7 +2929,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">parent<wbr>Uid<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/types/interfaces.d.ts:310</li>
+						<li>Defined in src/grid/types/interfaces.d.ts:322</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2916,12 +2944,32 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="pinbucket" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> pin<wbr>Bucket</h3>
+				<div class="tsd-signature tsd-kind-icon">pin<wbr>Bucket<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"top"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"bottom"</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in src/grid/types/interfaces.d.ts:262</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Specifies the pin bucket location: &#39;top&#39;, &#39;bottom&#39;, or undefined for unpinned.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>default</dt>
+						<dd><p>undefined</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 				<a name="rowindex" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagOptional">Optional</span> row<wbr>Index</h3>
 				<div class="tsd-signature tsd-kind-icon">row<wbr>Index<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/types/interfaces.d.ts:292</li>
+						<li>Defined in src/grid/types/interfaces.d.ts:304</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2941,7 +2989,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">row<wbr>Span<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/types/interfaces.d.ts:280</li>
+						<li>Defined in src/grid/types/interfaces.d.ts:292</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -3041,7 +3089,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">visible<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/types/interfaces.d.ts:274</li>
+						<li>Defined in src/grid/types/interfaces.d.ts:286</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
