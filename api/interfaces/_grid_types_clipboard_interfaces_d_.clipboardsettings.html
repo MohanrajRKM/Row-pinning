@@ -2382,13 +2382,16 @@ img {
 			<a href="_grid_types_clipboard_interfaces_d_.clipboardsettings.html" class="tsd-kind-icon">Clipboard<wbr>Settings</a>
 			<ul>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="_grid_types_clipboard_interfaces_d_.clipboardsettings.html#allowcut" class="tsd-kind-icon">allow<wbr>Cut</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="_grid_types_clipboard_interfaces_d_.clipboardsettings.html#allowpaste" class="tsd-kind-icon">allow<wbr>Paste</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="_grid_types_clipboard_interfaces_d_.clipboardsettings.html#allowrowcopy" class="tsd-kind-icon">allow<wbr>Row<wbr>Copy</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
 					<a href="_grid_types_clipboard_interfaces_d_.clipboardsettings.html#copywithheaders" class="tsd-kind-icon">copy<wbr>With<wbr>Headers</a>
-				</li>
-				<li class=" tsd-kind-property tsd-parent-kind-interface">
-					<a href="_grid_types_clipboard_interfaces_d_.clipboardsettings.html#enablecut" class="tsd-kind-icon">enable<wbr>Cut</a>
-				</li>
-				<li class=" tsd-kind-property tsd-parent-kind-interface">
-					<a href="_grid_types_clipboard_interfaces_d_.clipboardsettings.html#enablepaste" class="tsd-kind-icon">enable<wbr>Paste</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
 					<a href="_grid_types_clipboard_interfaces_d_.clipboardsettings.html#enabled" class="tsd-kind-icon">enabled</a>
@@ -2420,7 +2423,7 @@ img {
 &lt;Grid clipboardSettings={{ enabled: false }} /&gt;
 
 // Enable copy and paste, but disable cut
-&lt;Grid clipboardSettings={{ enabled: true, enableCut: false }} /&gt;</code></pre>
+&lt;Grid clipboardSettings={{ enabled: true, allowCut: false }} /&gt;</code></pre>
 					</dd>
 				</dl>
 			</div>
@@ -2440,9 +2443,10 @@ img {
 					<section class="tsd-index-section ">
 						<h3>Properties</h3>
 						<ul class="tsd-index-list">
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_clipboard_interfaces_d_.clipboardsettings.html#allowcut" class="tsd-kind-icon">allow<wbr>Cut</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_clipboard_interfaces_d_.clipboardsettings.html#allowpaste" class="tsd-kind-icon">allow<wbr>Paste</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_clipboard_interfaces_d_.clipboardsettings.html#allowrowcopy" class="tsd-kind-icon">allow<wbr>Row<wbr>Copy</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_clipboard_interfaces_d_.clipboardsettings.html#copywithheaders" class="tsd-kind-icon">copy<wbr>With<wbr>Headers</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_clipboard_interfaces_d_.clipboardsettings.html#enablecut" class="tsd-kind-icon">enable<wbr>Cut</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_clipboard_interfaces_d_.clipboardsettings.html#enablepaste" class="tsd-kind-icon">enable<wbr>Paste</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_clipboard_interfaces_d_.clipboardsettings.html#enabled" class="tsd-kind-icon">enabled</a></li>
 						</ul>
 					</section>
@@ -2452,12 +2456,92 @@ img {
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Properties</h2>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="allowcut" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> allow<wbr>Cut</h3>
+				<div class="tsd-signature tsd-kind-icon">allow<wbr>Cut<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in src/grid/types/clipboard.interfaces.d.ts:88</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Enables or disables cut operations in the grid.
+							When true, users can cut selected cells/rows using Ctrl+X.
+							When false, cut operations are blocked while copy and paste remain functional if enabled.
+						Requires enabled to be true and editSettings.allowDelete to be enabled for cut to work</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>default</dt>
+						<dd><p>true</p>
+						</dd>
+						<dt>example</dt>
+						<dd><pre><code class="language-tsx">&lt;Grid
+  dataSource={employees}
+  clipboardSettings={{ enabled: true, allowCut: false }}
+/&gt;</code></pre>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="allowpaste" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> allow<wbr>Paste</h3>
+				<div class="tsd-signature tsd-kind-icon">allow<wbr>Paste<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in src/grid/types/clipboard.interfaces.d.ts:106</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Enables or disables paste operations in the grid.
+							When true, users can paste clipboard data using Ctrl+V.
+							When false, paste operations are blocked while copy and cut remain functional if enabled.
+						Requires enabled to be true and editSettings.allowEdit to be enabled for paste to work.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>default</dt>
+						<dd><p>true</p>
+						</dd>
+						<dt>example</dt>
+						<dd><pre><code class="language-tsx">&lt;Grid
+  dataSource={employees}
+  editSettings={{ allowEdit: true }}
+  clipboardSettings={{ enabled: true, allowPaste: false }}
+/&gt;</code></pre>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="allowrowcopy" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> allow<wbr>Row<wbr>Copy</h3>
+				<div class="tsd-signature tsd-kind-icon">allow<wbr>Row<wbr>Copy<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in src/grid/types/clipboard.interfaces.d.ts:125</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>When true, row selection takes precedence over focused cell.
+						Copy/Cut/Paste operate on selected rows.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>default</dt>
+						<dd><p>false</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 				<a name="copywithheaders" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagOptional">Optional</span> copy<wbr>With<wbr>Headers</h3>
 				<div class="tsd-signature tsd-kind-icon">copy<wbr>With<wbr>Headers<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/types/clipboard.interfaces.d.ts:110</li>
+						<li>Defined in src/grid/types/clipboard.interfaces.d.ts:118</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2476,71 +2560,12 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-				<a name="enablecut" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagOptional">Optional</span> enable<wbr>Cut</h3>
-				<div class="tsd-signature tsd-kind-icon">enable<wbr>Cut<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in src/grid/types/clipboard.interfaces.d.ts:80</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Enables or disables cut operations in the grid.
-							When true, users can cut selected cells/rows using Ctrl+X.
-							When false, cut operations are blocked while copy and paste remain functional if enabled.
-						Requires enabled to be true and editSettings.allowDelete to be enabled for cut to work</p>
-					</div>
-					<dl class="tsd-comment-tags">
-						<dt>default</dt>
-						<dd><p>true</p>
-						</dd>
-						<dt>example</dt>
-						<dd><pre><code class="language-tsx">&lt;Grid
-  dataSource={employees}
-  clipboardSettings={{ enabled: true, enableCut: false }}
-/&gt;</code></pre>
-						</dd>
-					</dl>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-				<a name="enablepaste" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagOptional">Optional</span> enable<wbr>Paste</h3>
-				<div class="tsd-signature tsd-kind-icon">enable<wbr>Paste<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
-				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in src/grid/types/clipboard.interfaces.d.ts:98</li>
-					</ul>
-				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Enables or disables paste operations in the grid.
-							When true, users can paste clipboard data using Ctrl+V.
-							When false, paste operations are blocked while copy and cut remain functional if enabled.
-						Requires enabled to be true and editSettings.allowEdit to be enabled for paste to work.</p>
-					</div>
-					<dl class="tsd-comment-tags">
-						<dt>default</dt>
-						<dd><p>true</p>
-						</dd>
-						<dt>example</dt>
-						<dd><pre><code class="language-tsx">&lt;Grid
-  dataSource={employees}
-  editSettings={{ allowEdit: true }}
-  clipboardSettings={{ enabled: true, enablePaste: false }}
-/&gt;</code></pre>
-						</dd>
-					</dl>
-				</div>
-			</section>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 				<a name="enabled" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagOptional">Optional</span> enabled</h3>
 				<div class="tsd-signature tsd-kind-icon">enabled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/types/clipboard.interfaces.d.ts:63</li>
+						<li>Defined in src/grid/types/clipboard.interfaces.d.ts:71</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2548,7 +2573,7 @@ img {
 						<p>Enables or disables all clipboard operations (copy, paste, cut) in the grid.
 							When enabled, users can copy, paste, and cut selected cells/rows.
 							When disabled, all clipboard operations are completely blocked.
-						Individual operations can be controlled via enableCut and enablePaste properties.</p>
+						Individual operations can be controlled via allowCut and allowPaste properties.</p>
 					</div>
 					<dl class="tsd-comment-tags">
 						<dt>default</dt>

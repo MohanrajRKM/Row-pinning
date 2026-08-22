@@ -2447,6 +2447,9 @@ img {
 		<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-private">
 			<a href="_grid_utils_utils_d_.html#headervalueaccessor" class="tsd-kind-icon">header<wbr>Value<wbr>Accessor</a>
 		</li>
+		<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-is-private">
+			<a href="_grid_utils_utils_d_.html#iscolumnschild" class="tsd-kind-icon">is<wbr>Columns<wbr>Child</a>
+		</li>
 		<li class=" tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter">
 			<a href="_grid_utils_utils_d_.html#isgroupeddata" class="tsd-kind-icon">is<wbr>Grouped<wbr>Data</a>
 		</li>
@@ -2512,6 +2515,7 @@ img {
 							<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-private"><a href="_grid_utils_utils_d_.html#getuid" class="tsd-kind-icon">get<wbr>Uid</a></li>
 							<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-private"><a href="_grid_utils_utils_d_.html#getwithoutcheckboxandcommandcolumn" class="tsd-kind-icon">get<wbr>Without<wbr>Check<wbr>Boxand<wbr>Command<wbr>Column</a></li>
 							<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-private"><a href="_grid_utils_utils_d_.html#headervalueaccessor" class="tsd-kind-icon">header<wbr>Value<wbr>Accessor</a></li>
+							<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-private"><a href="_grid_utils_utils_d_.html#iscolumnschild" class="tsd-kind-icon">is<wbr>Columns<wbr>Child</a></li>
 							<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter"><a href="_grid_utils_utils_d_.html#isgroupeddata" class="tsd-kind-icon">is<wbr>Grouped<wbr>Data</a></li>
 							<li class="tsd-kind-function tsd-parent-kind-external-module tsd-has-type-parameter tsd-is-private"><a href="_grid_utils_utils_d_.html#iteratearrayorobject" class="tsd-kind-icon">iterate<wbr>Array<wbr>OrObject</a></li>
 							<li class="tsd-kind-function tsd-parent-kind-external-module tsd-is-private"><a href="_grid_utils_utils_d_.html#padzero" class="tsd-kind-icon">pad<wbr>Zero</a></li>
@@ -3165,7 +3169,7 @@ img {
 				<a name="getallfields" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>All<wbr>Fields</h3>
 				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-private">
-					<li class="tsd-signature tsd-kind-icon">get<wbr>All<wbr>Fields<span class="tsd-signature-symbol">(</span>columns<span class="tsd-signature-symbol">: </span><a href="../interfaces/_grid_types_column_interfaces_d_.columnprops.html" class="tsd-signature-type">ColumnProps</a><span class="tsd-signature-symbol">[]</span>, fields<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
+					<li class="tsd-signature tsd-kind-icon">get<wbr>All<wbr>Fields<span class="tsd-signature-symbol">(</span>columns<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><a href="../interfaces/_grid_types_column_interfaces_d_.columnprops.html" class="tsd-signature-type">ColumnProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ReactElement</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_grid_types_column_interfaces_d_.icolumnbase.html" class="tsd-signature-type">IColumnBase</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">ReactElement</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span>, fields<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">undefined</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
@@ -3184,7 +3188,7 @@ img {
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
-								<h5>columns: <a href="../interfaces/_grid_types_column_interfaces_d_.columnprops.html" class="tsd-signature-type">ColumnProps</a><span class="tsd-signature-symbol">[]</span></h5>
+								<h5>columns: <span class="tsd-signature-symbol">(</span><a href="../interfaces/_grid_types_column_interfaces_d_.columnprops.html" class="tsd-signature-type">ColumnProps</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">ReactElement</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_grid_types_column_interfaces_d_.icolumnbase.html" class="tsd-signature-type">IColumnBase</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">(</span>props<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">P</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">ReactElement</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></h5>
 								<div class="tsd-comment tsd-typography">
 									<p>The columns to extract fields from</p>
 								</div>
@@ -3705,6 +3709,39 @@ img {
 						</ul>
 						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">T</span></h4>
 						<p>headerValueAccessor</p>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-external-module tsd-is-private">
+				<a name="iscolumnschild" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagPrivate">Private</span> is<wbr>Columns<wbr>Child</h3>
+				<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-external-module tsd-is-private">
+					<li class="tsd-signature tsd-kind-icon">is<wbr>Columns<wbr>Child<span class="tsd-signature-symbol">(</span>children<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">React.ReactNode</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in src/grid/utils/utils.d.ts:285</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Checks if the provided children contains a Columns component
+								Handles both array and non-array children by normalizing them to an array</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>children: <span class="tsd-signature-type">React.ReactNode</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>The React children to check</p>
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						<p>Object containing the child array and boolean flag</p>
 					</li>
 				</ul>
 			</section>

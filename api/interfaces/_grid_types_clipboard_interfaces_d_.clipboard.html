@@ -2367,13 +2367,16 @@ img {
 			<a href="_grid_types_clipboard_interfaces_d_.clipboard.html" class="tsd-kind-icon">Clipboard</a>
 			<ul>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
-					<a href="_grid_types_clipboard_interfaces_d_.clipboard.html#copyselectiontoclipboard" class="tsd-kind-icon">copy<wbr>Selection<wbr>ToClipboard</a>
+					<a href="_grid_types_clipboard_interfaces_d_.clipboard.html#copytoclipboard" class="tsd-kind-icon">copy<wbr>ToClipboard</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
-					<a href="_grid_types_clipboard_interfaces_d_.clipboard.html#cutselectiontoclipboard" class="tsd-kind-icon">cut<wbr>Selection<wbr>ToClipboard</a>
+					<a href="_grid_types_clipboard_interfaces_d_.clipboard.html#cuttoclipboard" class="tsd-kind-icon">cut<wbr>ToClipboard</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-private">
+					<a href="_grid_types_clipboard_interfaces_d_.clipboard.html#isclipboardoperation" class="tsd-kind-icon">is<wbr>Clipboard<wbr>Operation</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
-					<a href="_grid_types_clipboard_interfaces_d_.clipboard.html#pasteclipboarddata" class="tsd-kind-icon">paste<wbr>Clipboard<wbr>Data</a>
+					<a href="_grid_types_clipboard_interfaces_d_.clipboard.html#pastefromclipboard" class="tsd-kind-icon">paste<wbr>From<wbr>Clipboard</a>
 				</li>
 			</ul>
 		</li>
@@ -2421,9 +2424,10 @@ img {
 					<section class="tsd-index-section ">
 						<h3>Properties</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_clipboard_interfaces_d_.clipboard.html#copyselectiontoclipboard" class="tsd-kind-icon">copy<wbr>Selection<wbr>ToClipboard</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_clipboard_interfaces_d_.clipboard.html#cutselectiontoclipboard" class="tsd-kind-icon">cut<wbr>Selection<wbr>ToClipboard</a></li>
-							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_clipboard_interfaces_d_.clipboard.html#pasteclipboarddata" class="tsd-kind-icon">paste<wbr>Clipboard<wbr>Data</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_clipboard_interfaces_d_.clipboard.html#copytoclipboard" class="tsd-kind-icon">copy<wbr>ToClipboard</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_clipboard_interfaces_d_.clipboard.html#cuttoclipboard" class="tsd-kind-icon">cut<wbr>ToClipboard</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-private"><a href="_grid_types_clipboard_interfaces_d_.clipboard.html#isclipboardoperation" class="tsd-kind-icon">is<wbr>Clipboard<wbr>Operation</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_clipboard_interfaces_d_.clipboard.html#pastefromclipboard" class="tsd-kind-icon">paste<wbr>From<wbr>Clipboard</a></li>
 						</ul>
 					</section>
 				</div>
@@ -2432,12 +2436,12 @@ img {
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Properties</h2>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-				<a name="copyselectiontoclipboard" class="tsd-anchor"></a>
-				<h3>copy<wbr>Selection<wbr>ToClipboard</h3>
-				<div class="tsd-signature tsd-kind-icon">copy<wbr>Selection<wbr>ToClipboard<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>withHeaders<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></div>
+				<a name="copytoclipboard" class="tsd-anchor"></a>
+				<h3>copy<wbr>ToClipboard</h3>
+				<div class="tsd-signature tsd-kind-icon">copy<wbr>ToClipboard<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>withHeaders<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/types/clipboard.interfaces.d.ts:16</li>
+						<li>Defined in src/grid/types/clipboard.interfaces.d.ts:18</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2468,12 +2472,12 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-				<a name="cutselectiontoclipboard" class="tsd-anchor"></a>
-				<h3>cut<wbr>Selection<wbr>ToClipboard</h3>
-				<div class="tsd-signature tsd-kind-icon">cut<wbr>Selection<wbr>ToClipboard<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></div>
+				<a name="cuttoclipboard" class="tsd-anchor"></a>
+				<h3>cut<wbr>ToClipboard</h3>
+				<div class="tsd-signature tsd-kind-icon">cut<wbr>ToClipboard<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/types/clipboard.interfaces.d.ts:25</li>
+						<li>Defined in src/grid/types/clipboard.interfaces.d.ts:27</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2498,13 +2502,28 @@ img {
 					</ul>
 				</div>
 			</section>
-			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-				<a name="pasteclipboarddata" class="tsd-anchor"></a>
-				<h3>paste<wbr>Clipboard<wbr>Data</h3>
-				<div class="tsd-signature tsd-kind-icon">paste<wbr>Clipboard<wbr>Data<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>clipboardText<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-private">
+				<a name="isclipboardoperation" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagPrivate">Private</span> is<wbr>Clipboard<wbr>Operation</h3>
+				<div class="tsd-signature tsd-kind-icon">is<wbr>Clipboard<wbr>Operation<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RefObject</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/types/clipboard.interfaces.d.ts:20</li>
+						<li>Defined in src/grid/types/clipboard.interfaces.d.ts:33</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Internal flag used to suppress selection reset during clipboard updates.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="pastefromclipboard" class="tsd-anchor"></a>
+				<h3>paste<wbr>From<wbr>Clipboard</h3>
+				<div class="tsd-signature tsd-kind-icon">paste<wbr>From<wbr>Clipboard<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>clipboardText<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in src/grid/types/clipboard.interfaces.d.ts:22</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
