@@ -2388,10 +2388,16 @@ img {
 			<a href="_grid_types_grid_interfaces_d_.gridmodules.html" class="tsd-kind-icon">Grid<wbr>Modules</a>
 			<ul>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="_grid_types_grid_interfaces_d_.gridmodules.html#autofitmodule" class="tsd-kind-icon">Auto<wbr>Fit<wbr>Module</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
 					<a href="_grid_types_grid_interfaces_d_.gridmodules.html#clipboardmodule" class="tsd-kind-icon">Clipboard<wbr>Module</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
 					<a href="_grid_types_grid_interfaces_d_.gridmodules.html#pinningmodule" class="tsd-kind-icon">Pinning<wbr>Module</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="_grid_types_grid_interfaces_d_.gridmodules.html#resizemodule" class="tsd-kind-icon">Resize<wbr>Module</a>
 				</li>
 			</ul>
 		</li>
@@ -2452,8 +2458,10 @@ img {
 					<section class="tsd-index-section ">
 						<h3>Properties</h3>
 						<ul class="tsd-index-list">
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_grid_interfaces_d_.gridmodules.html#autofitmodule" class="tsd-kind-icon">Auto<wbr>Fit<wbr>Module</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_grid_interfaces_d_.gridmodules.html#clipboardmodule" class="tsd-kind-icon">Clipboard<wbr>Module</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_grid_interfaces_d_.gridmodules.html#pinningmodule" class="tsd-kind-icon">Pinning<wbr>Module</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_grid_interfaces_d_.gridmodules.html#resizemodule" class="tsd-kind-icon">Resize<wbr>Module</a></li>
 						</ul>
 					</section>
 				</div>
@@ -2462,12 +2470,33 @@ img {
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Properties</h2>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="autofitmodule" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> Auto<wbr>Fit<wbr>Module</h3>
+				<div class="tsd-signature tsd-kind-icon">Auto<wbr>Fit<wbr>Module<span class="tsd-signature-symbol">:</span> <a href="../modules/_grid_types_auto_fit_interfaces_d_.html#autofitmoduletype" class="tsd-signature-type">AutoFitModuleType</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in src/grid/types/grid.interfaces.d.ts:702</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Injects column auto-fitting functionality into the Grid.
+						Enables automatic adjustment of column widths based on header and/or content dimensions.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>example</dt>
+						<dd><pre><code class="language-tsx">modules={{ AutoFitModule }}</code></pre>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 				<a name="clipboardmodule" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagOptional">Optional</span> Clipboard<wbr>Module</h3>
 				<div class="tsd-signature tsd-kind-icon">Clipboard<wbr>Module<span class="tsd-signature-symbol">:</span> <a href="../modules/_grid_types_clipboard_interfaces_d_.html#clipboardmoduletype" class="tsd-signature-type">ClipboardModuleType</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/types/grid.interfaces.d.ts:640</li>
+						<li>Defined in src/grid/types/grid.interfaces.d.ts:682</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2488,7 +2517,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">Pinning<wbr>Module<span class="tsd-signature-symbol">:</span> <a href="../modules/_grid_types_row_pinning_interfaces_d_.html#pinningmoduletype" class="tsd-signature-type">PinningModuleType</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/types/grid.interfaces.d.ts:650</li>
+						<li>Defined in src/grid/types/grid.interfaces.d.ts:712</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2499,6 +2528,27 @@ img {
 					<dl class="tsd-comment-tags">
 						<dt>example</dt>
 						<dd><pre><code class="language-tsx">modules={{ PinningModule }}</code></pre>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="resizemodule" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> Resize<wbr>Module</h3>
+				<div class="tsd-signature tsd-kind-icon">Resize<wbr>Module<span class="tsd-signature-symbol">:</span> <a href="../modules/_grid_types_resize_interfaces_d_.html#resizemoduletype" class="tsd-signature-type">ResizeModuleType</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in src/grid/types/grid.interfaces.d.ts:692</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Injects column resizing functionality into the Grid.
+						Enables users to resize columns by dragging column headers.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>example</dt>
+						<dd><pre><code class="language-tsx">modules={{ ResizeModule }}</code></pre>
 						</dd>
 					</dl>
 				</div>
