@@ -2363,8 +2363,8 @@ img {
 </header>
 <nav class="tsd-navigation secondary">
 	<ul>
-		<li class=" tsd-kind-variable tsd-parent-kind-external-module tsd-is-private">
-			<a href="_grid_hooks_usesearch_d_.html#usesearch" class="tsd-kind-icon">use<wbr>Search</a>
+		<li class=" tsd-kind-reference tsd-parent-kind-external-module">
+			<a href="_grid_hooks_usesearch_d_.html#searchmodule" class="tsd-kind-icon">Search<wbr>Module</a>
 		</li>
 	</ul>
 </nav>
@@ -2374,110 +2374,23 @@ img {
 			<h2>Index</h2>
 			<section class="tsd-panel tsd-index-panel">
 				<div class="tsd-index-content">
-					<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
-						<h3>Variables</h3>
+					<section class="tsd-index-section ">
+						<h3>References</h3>
 						<ul class="tsd-index-list">
-							<li class="tsd-kind-variable tsd-parent-kind-external-module tsd-is-private"><a href="_grid_hooks_usesearch_d_.html#usesearch" class="tsd-kind-icon">use<wbr>Search</a></li>
+							<li class="tsd-kind-reference tsd-parent-kind-external-module"><a href="_grid_hooks_usesearch_d_.html#searchmodule" class="tsd-kind-icon">Search<wbr>Module</a></li>
 						</ul>
 					</section>
 				</div>
 			</section>
 		</section>
-		<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
-			<h2>Variables</h2>
-			<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-external-module tsd-is-private">
-				<a name="usesearch" class="tsd-anchor"></a>
-				<h3><span class="tsd-flag ts-flagPrivate">Private</span> <span class="tsd-flag ts-flagConst">Const</span> use<wbr>Search</h3>
-				<div class="tsd-signature tsd-kind-icon">use<wbr>Search<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">(</span>gridRef<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">RefObject</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_grid_types_grid_interfaces_d_.gridref.html" class="tsd-signature-type">GridRef</a><span class="tsd-signature-symbol">&gt;</span>, searchSetting<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_grid_types_search_interfaces_d_.searchsettings.html" class="tsd-signature-type">SearchSettings</a>, setGridAction<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span>action<span class="tsd-signature-symbol">: </span><a href="../interfaces/_grid_types_search_interfaces_d_.searchevent.html" class="tsd-signature-type">SearchEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span>, setCurrentPage<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Dispatch</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">SetStateAction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, virtualSettings<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_grid_types_virtualization_interface_d_.virtualsettings.html" class="tsd-signature-type">VirtualSettings</a>, scrollMode<span class="tsd-signature-symbol">?: </span><a href="../enums/_grid_types_enum_d_.scrollmode.html" class="tsd-signature-type">ScrollMode</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><a href="../interfaces/_grid_types_search_interfaces_d_.searchapi.html" class="tsd-signature-type">SearchAPI</a></div>
+		<section class="tsd-panel-group tsd-member-group ">
+			<h2>References</h2>
+			<section class="tsd-panel tsd-member tsd-kind-reference tsd-parent-kind-external-module">
+				<a name="searchmodule" class="tsd-anchor"></a>
+				<h3>Search<wbr>Module</h3>
+				<div class="tsd-signature tsd-kind-icon">Search<wbr>Module<span class="tsd-signature-symbol">:</span></div>
 				<aside class="tsd-sources">
-					<ul>
-						<li>Defined in src/grid/hooks/useSearch.d.ts:20</li>
-					</ul>
 				</aside>
-				<div class="tsd-comment tsd-typography">
-					<div class="lead">
-						<p>Manages search configuration and execution for the Grid component.
-							Handles search value updates, numeric validation, and pagination integration with virtual scrolling support.
-						Provides search API with settings state management and search execution method.</p>
-					</div>
-					<dl class="tsd-comment-tags">
-						<dt>param</dt>
-						<dd><p>Reference to the grid component instance for accessing search configuration and triggering events</p>
-						</dd>
-						<dt>param</dt>
-						<dd><p>Search configuration including enabled state, fields, value, operator, and case sensitivity</p>
-						</dd>
-						<dt>param</dt>
-						<dd><p>Callback function to dispatch search action events of type SearchEvent for state management</p>
-						</dd>
-						<dt>param</dt>
-						<dd><p>State setter function to update pagination when search is applied with virtual scrolling</p>
-						</dd>
-						<dt>param</dt>
-						<dd><p>Virtual scrolling configuration containing row virtualization and cache settings</p>
-						</dd>
-						<dt>param</dt>
-						<dd><p>Current scroll mode determining virtualization behavior</p>
-						</dd>
-						<dt>returns</dt>
-						<dd><p>Object containing search method, searchSettings state, and setSearchSetting updater function</p>
-						</dd>
-					</dl>
-				</div>
-				<div class="tsd-type-declaration">
-					<h4>Type declaration</h4>
-					<ul class="tsd-parameters">
-						<li class="tsd-parameter-siganture">
-							<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-variable">
-								<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>gridRef<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">RefObject</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_grid_types_grid_interfaces_d_.gridref.html" class="tsd-signature-type">GridRef</a><span class="tsd-signature-symbol">&gt;</span>, searchSetting<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_grid_types_search_interfaces_d_.searchsettings.html" class="tsd-signature-type">SearchSettings</a>, setGridAction<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-symbol">(</span>action<span class="tsd-signature-symbol">: </span><a href="../interfaces/_grid_types_search_interfaces_d_.searchevent.html" class="tsd-signature-type">SearchEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span>, setCurrentPage<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">Dispatch</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">SetStateAction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>, virtualSettings<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_grid_types_virtualization_interface_d_.virtualsettings.html" class="tsd-signature-type">VirtualSettings</a>, scrollMode<span class="tsd-signature-symbol">?: </span><a href="../enums/_grid_types_enum_d_.scrollmode.html" class="tsd-signature-type">ScrollMode</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="../interfaces/_grid_types_search_interfaces_d_.searchapi.html" class="tsd-signature-type">SearchAPI</a></li>
-							</ul>
-							<ul class="tsd-descriptions">
-								<li class="tsd-description">
-									<h4 class="tsd-parameters-title">Parameters</h4>
-									<ul class="tsd-parameters">
-										<li>
-											<h5><span class="tsd-flag ts-flagOptional">Optional</span> gridRef: <span class="tsd-signature-type">RefObject</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/_grid_types_grid_interfaces_d_.gridref.html" class="tsd-signature-type">GridRef</a><span class="tsd-signature-symbol">&gt;</span></h5>
-										</li>
-										<li>
-											<h5><span class="tsd-flag ts-flagOptional">Optional</span> searchSetting: <a href="../interfaces/_grid_types_search_interfaces_d_.searchsettings.html" class="tsd-signature-type">SearchSettings</a></h5>
-										</li>
-										<li>
-											<h5><span class="tsd-flag ts-flagOptional">Optional</span> setGridAction: <span class="tsd-signature-symbol">(</span>action<span class="tsd-signature-symbol">: </span><a href="../interfaces/_grid_types_search_interfaces_d_.searchevent.html" class="tsd-signature-type">SearchEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">void</span></h5>
-											<ul class="tsd-parameters">
-												<li class="tsd-parameter-siganture">
-													<ul class="tsd-signatures tsd-kind-type-literal">
-														<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>action<span class="tsd-signature-symbol">: </span><a href="../interfaces/_grid_types_search_interfaces_d_.searchevent.html" class="tsd-signature-type">SearchEvent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-													</ul>
-													<ul class="tsd-descriptions">
-														<li class="tsd-description">
-															<h4 class="tsd-parameters-title">Parameters</h4>
-															<ul class="tsd-parameters">
-																<li>
-																	<h5>action: <a href="../interfaces/_grid_types_search_interfaces_d_.searchevent.html" class="tsd-signature-type">SearchEvent</a></h5>
-																</li>
-															</ul>
-															<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-														</li>
-													</ul>
-												</li>
-											</ul>
-										</li>
-										<li>
-											<h5><span class="tsd-flag ts-flagOptional">Optional</span> setCurrentPage: <span class="tsd-signature-type">Dispatch</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">SetStateAction</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h5>
-										</li>
-										<li>
-											<h5><span class="tsd-flag ts-flagOptional">Optional</span> virtualSettings: <a href="../interfaces/_grid_types_virtualization_interface_d_.virtualsettings.html" class="tsd-signature-type">VirtualSettings</a></h5>
-										</li>
-										<li>
-											<h5><span class="tsd-flag ts-flagOptional">Optional</span> scrollMode: <a href="../enums/_grid_types_enum_d_.scrollmode.html" class="tsd-signature-type">ScrollMode</a></h5>
-										</li>
-									</ul>
-									<h4 class="tsd-returns-title">Returns <a href="../interfaces/_grid_types_search_interfaces_d_.searchapi.html" class="tsd-signature-type">SearchAPI</a></h4>
-								</li>
-							</ul>
-						</li>
-					</ul>
-				</div>
 			</section>
 		</section>
 		<footer class="with-border-bottom">

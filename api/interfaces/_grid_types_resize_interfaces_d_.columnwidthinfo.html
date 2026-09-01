@@ -2379,6 +2379,9 @@ img {
 			<a href="_grid_types_resize_interfaces_d_.columnwidthinfo.html" class="tsd-kind-icon">Column<wbr>Width<wbr>Info</a>
 			<ul>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="_grid_types_resize_interfaces_d_.columnwidthinfo.html#hasautofitwidth" class="tsd-kind-icon">has<wbr>Auto<wbr>Fit<wbr>Width</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
 					<a href="_grid_types_resize_interfaces_d_.columnwidthinfo.html#hasdynamicwidth" class="tsd-kind-icon">has<wbr>Dynamic<wbr>Width</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
@@ -2400,6 +2403,9 @@ img {
 		</li>
 		<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 			<a href="_grid_types_resize_interfaces_d_.resizecolumn.html" class="tsd-kind-icon">Resize<wbr>Column</a>
+		</li>
+		<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-is-private">
+			<a href="_grid_types_resize_interfaces_d_.resizehelper.html" class="tsd-kind-icon">Resize<wbr>Helper</a>
 		</li>
 		<li class=" tsd-kind-interface tsd-parent-kind-external-module">
 			<a href="_grid_types_resize_interfaces_d_.resizesettings.html" class="tsd-kind-icon">Resize<wbr>Settings</a>
@@ -2434,6 +2440,7 @@ img {
 					<section class="tsd-index-section ">
 						<h3>Properties</h3>
 						<ul class="tsd-index-list">
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_resize_interfaces_d_.columnwidthinfo.html#hasautofitwidth" class="tsd-kind-icon">has<wbr>Auto<wbr>Fit<wbr>Width</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_resize_interfaces_d_.columnwidthinfo.html#hasdynamicwidth" class="tsd-kind-icon">has<wbr>Dynamic<wbr>Width</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_resize_interfaces_d_.columnwidthinfo.html#iscolumnwidthchanged" class="tsd-kind-icon">is<wbr>Column<wbr>Width<wbr>Changed</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_resize_interfaces_d_.columnwidthinfo.html#maxtablewidth" class="tsd-kind-icon">max<wbr>Table<wbr>Width</a></li>
@@ -2448,12 +2455,33 @@ img {
 		<section class="tsd-panel-group tsd-member-group ">
 			<h2>Properties</h2>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="hasautofitwidth" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> has<wbr>Auto<wbr>Fit<wbr>Width</h3>
+				<div class="tsd-signature tsd-kind-icon">has<wbr>Auto<wbr>Fit<wbr>Width<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in src/grid/types/resize.interfaces.d.ts:244</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Marks that one or more columns have been auto-fitted to their content and the table needs to be re-evaluated.
+						Reset by the resize hook after a successful re-render.</p>
+					</div>
+					<dl class="tsd-comment-tags">
+						<dt>default</dt>
+						<dd><p>false</p>
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 				<a name="hasdynamicwidth" class="tsd-anchor"></a>
 				<h3><span class="tsd-flag ts-flagOptional">Optional</span> has<wbr>Dynamic<wbr>Width</h3>
 				<div class="tsd-signature tsd-kind-icon">has<wbr>Dynamic<wbr>Width<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/types/resize.interfaces.d.ts:208</li>
+						<li>Defined in src/grid/types/resize.interfaces.d.ts:238</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2474,7 +2502,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">is<wbr>Column<wbr>Width<wbr>Changed<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/types/resize.interfaces.d.ts:173</li>
+						<li>Defined in src/grid/types/resize.interfaces.d.ts:203</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2495,7 +2523,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">max<wbr>Table<wbr>Width<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/types/resize.interfaces.d.ts:194</li>
+						<li>Defined in src/grid/types/resize.interfaces.d.ts:224</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2516,7 +2544,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">render<wbr>Initial<wbr>Width<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/types/resize.interfaces.d.ts:180</li>
+						<li>Defined in src/grid/types/resize.interfaces.d.ts:210</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2537,7 +2565,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">resize<wbr>Table<wbr>Width<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/types/resize.interfaces.d.ts:201</li>
+						<li>Defined in src/grid/types/resize.interfaces.d.ts:231</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">
@@ -2558,7 +2586,7 @@ img {
 				<div class="tsd-signature tsd-kind-icon">width<wbr>Process<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in src/grid/types/resize.interfaces.d.ts:187</li>
+						<li>Defined in src/grid/types/resize.interfaces.d.ts:217</li>
 					</ul>
 				</aside>
 				<div class="tsd-comment tsd-typography">

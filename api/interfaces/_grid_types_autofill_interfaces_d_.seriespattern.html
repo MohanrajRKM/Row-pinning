@@ -2406,7 +2406,13 @@ img {
 					<a href="_grid_types_autofill_interfaces_d_.seriespattern.html#basevalues" class="tsd-kind-icon">base<wbr>Values</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="_grid_types_autofill_interfaces_d_.seriespattern.html#intercept" class="tsd-kind-icon">intercept</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
 					<a href="_grid_types_autofill_interfaces_d_.seriespattern.html#pattern" class="tsd-kind-icon">pattern</a>
+				</li>
+				<li class=" tsd-kind-property tsd-parent-kind-interface">
+					<a href="_grid_types_autofill_interfaces_d_.seriespattern.html#slope" class="tsd-kind-icon">slope</a>
 				</li>
 				<li class=" tsd-kind-property tsd-parent-kind-interface">
 					<a href="_grid_types_autofill_interfaces_d_.seriespattern.html#step" class="tsd-kind-icon">step</a>
@@ -2450,7 +2456,9 @@ img {
 						<h3>Properties</h3>
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_autofill_interfaces_d_.seriespattern.html#basevalues" class="tsd-kind-icon">base<wbr>Values</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_autofill_interfaces_d_.seriespattern.html#intercept" class="tsd-kind-icon">intercept</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_autofill_interfaces_d_.seriespattern.html#pattern" class="tsd-kind-icon">pattern</a></li>
+							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_autofill_interfaces_d_.seriespattern.html#slope" class="tsd-kind-icon">slope</a></li>
 							<li class="tsd-kind-property tsd-parent-kind-interface"><a href="_grid_types_autofill_interfaces_d_.seriespattern.html#step" class="tsd-kind-icon">step</a></li>
 						</ul>
 					</section>
@@ -2478,6 +2486,22 @@ img {
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="intercept" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> intercept</h3>
+				<div class="tsd-signature tsd-kind-icon">intercept<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in src/grid/types/autofill.interfaces.d.ts:82</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Trend line intercept for non-uniform numeric sequences.
+						Only populated when pattern is &#39;numericTrend&#39;.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 				<a name="pattern" class="tsd-anchor"></a>
 				<h3>pattern</h3>
 				<div class="tsd-signature tsd-kind-icon">pattern<span class="tsd-signature-symbol">:</span> <a href="../modules/_grid_types_autofill_interfaces_d_.html#seriesfillpattern" class="tsd-signature-type">SeriesFillPattern</a></div>
@@ -2489,6 +2513,22 @@ img {
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
 						<p>Type of pattern detected: &#39;numeric&#39; for number sequences, &#39;text&#39; for text patterns, &#39;single&#39; for single value.</p>
+					</div>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+				<a name="slope" class="tsd-anchor"></a>
+				<h3><span class="tsd-flag ts-flagOptional">Optional</span> slope</h3>
+				<div class="tsd-signature tsd-kind-icon">slope<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in src/grid/types/autofill.interfaces.d.ts:77</li>
+					</ul>
+				</aside>
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Trend line slope for non-uniform numeric sequences.
+						Only populated when pattern is &#39;numericTrend&#39;.</p>
 					</div>
 				</div>
 			</section>

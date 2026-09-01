@@ -2429,6 +2429,9 @@ img {
 				<li class=" tsd-kind-method tsd-parent-kind-interface">
 					<a href="_grid_types_cell_selection_interfaces_d_.cellselectionmodel.html#getselectedcellsdata" class="tsd-kind-icon">get<wbr>Selected<wbr>Cells<wbr>Data</a>
 				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-interface">
+					<a href="_grid_types_cell_selection_interfaces_d_.cellselectionmodel.html#getselectionstartcell" class="tsd-kind-icon">get<wbr>Selection<wbr>Start<wbr>Cell</a>
+				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-private">
 					<a href="_grid_types_cell_selection_interfaces_d_.cellselectionmodel.html#handlegridclick" class="tsd-kind-icon">handle<wbr>Grid<wbr>Click</a>
 				</li>
@@ -2507,6 +2510,7 @@ img {
 							<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-private"><a href="_grid_types_cell_selection_interfaces_d_.cellselectionmodel.html#getcellpositionfromelement" class="tsd-kind-icon">get<wbr>Cell<wbr>Position<wbr>From<wbr>Element</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-private"><a href="_grid_types_cell_selection_interfaces_d_.cellselectionmodel.html#getrowdatabyrowindex" class="tsd-kind-icon">get<wbr>Row<wbr>Data<wbr>ByRow<wbr>Index</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_grid_types_cell_selection_interfaces_d_.cellselectionmodel.html#getselectedcellsdata" class="tsd-kind-icon">get<wbr>Selected<wbr>Cells<wbr>Data</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_grid_types_cell_selection_interfaces_d_.cellselectionmodel.html#getselectionstartcell" class="tsd-kind-icon">get<wbr>Selection<wbr>Start<wbr>Cell</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-private"><a href="_grid_types_cell_selection_interfaces_d_.cellselectionmodel.html#handlegridclick" class="tsd-kind-icon">handle<wbr>Grid<wbr>Click</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-private"><a href="_grid_types_cell_selection_interfaces_d_.cellselectionmodel.html#handlegridmousedown" class="tsd-kind-icon">handle<wbr>Grid<wbr>Mouse<wbr>Down</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-private"><a href="_grid_types_cell_selection_interfaces_d_.cellselectionmodel.html#handlekeydown" class="tsd-kind-icon">handle<wbr>Key<wbr>Down</a></li>
@@ -2625,7 +2629,7 @@ const isSelected = gridRef.current.cellSelectionModule.selectedCells?.has(cellKe
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:515</li>
+								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:524</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2660,7 +2664,7 @@ const isSelected = gridRef.current.cellSelectionModule.selectedCells?.has(cellKe
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:541</li>
+								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:551</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2685,7 +2689,7 @@ const isSelected = gridRef.current.cellSelectionModule.selectedCells?.has(cellKe
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:550</li>
+								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:560</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2760,7 +2764,7 @@ gridRef.current.cellSelectionModule.clearCellSelection([
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:532</li>
+								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:542</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2841,7 +2845,7 @@ gridRef.current.cellSelectionModule.clearCellSelection([
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:483</li>
+								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:492</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2874,7 +2878,7 @@ gridRef.current.cellSelectionModule.clearCellSelection([
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:524</li>
+								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:533</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -2938,6 +2942,32 @@ const selectedCells = gridRef.current.cellSelectionModule.getSelectedCellsData()
 						</div>
 						<h4 class="tsd-returns-title">Returns <a href="_grid_types_cell_selection_interfaces_d_.rowcellinfo.html" class="tsd-signature-type">RowCellInfo</a><span class="tsd-signature-symbol">[]</span></h4>
 						<p>Array of objects with row identifier, selected cell field names, and their values.</p>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+				<a name="getselectionstartcell" class="tsd-anchor"></a>
+				<h3>get<wbr>Selection<wbr>Start<wbr>Cell</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+					<li class="tsd-signature tsd-kind-icon">get<wbr>Selection<wbr>Start<wbr>Cell<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_grid_types_cell_selection_interfaces_d_.cellposition.html" class="tsd-signature-type">CellPosition</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:482</li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Retrieves the starting (anchor) cell of the current range selection.
+									This is the first cell selected by the user and is used as the
+								source cell for autofill operations and source-cell styling.</p>
+							</div>
+						</div>
+						<h4 class="tsd-returns-title">Returns <a href="_grid_types_cell_selection_interfaces_d_.cellposition.html" class="tsd-signature-type">CellPosition</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">null</span></h4>
+						<p>The selection start cell, or null if no
+						range selection has been established.</p>
 					</li>
 				</ul>
 			</section>
@@ -3092,7 +3122,7 @@ gridRef.current.cellSelectionModule.selectCell(&#39;123&#39;, &#39;OrderID&#39;)
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:502</li>
+								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:511</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -3279,7 +3309,7 @@ gridRef.current.cellSelectionModule.selectRange(
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:492</li>
+								<li>Defined in src/grid/types/cell-selection.interfaces.d.ts:501</li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
